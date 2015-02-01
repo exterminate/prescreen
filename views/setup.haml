@@ -1,0 +1,11 @@
+%form{ :action => "/setup", :method => "post" }
+    .form
+        %label pick week
+        %input{ :type => "date", :name => "date" }
+    .form
+        %label pick time
+        %input{ :type => "time", :name => "time" }
+    .form
+        %input{ :type => "submit" }
+        
+    %p "Time now is #{Time.now.hour}:#{Time.now.min}"    

@@ -1,0 +1,7 @@
+
+- @item_from_names.each do |item|
+    - @count_the_prescreens += item[:manuscripts]
+    %p #{item[:name]} #{item[:manuscripts]}
+
+%h1 #{@count_the_prescreens} prescreens 
+%h2 3 SPEs (#{@count_the_prescreens / 3} each + #{@count_the_prescreens % 3} left over), 4 SPEs (#{@count_the_prescreens / 4} + #{@count_the_prescreens % 4}), 5 SPEs (#{@count_the_prescreens / 5} + #{@count_the_prescreens % 5})

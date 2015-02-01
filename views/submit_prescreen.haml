@@ -1,0 +1,15 @@
+%p.red= @flash
+
+%h1 Add your name and the number of prescreens
+
+%h2 You have until 15 minutes before the prescreen meeting to submit otherwise wait til the next meeting.
+
+%form{ :action => "/", :method => "post" }
+    .form_element
+        %label name
+        %input{:type => "text", :name => "name_of_pe"}
+    .form_element
+        %label number of prescreens?
+        %input{:type => "text", :size => "2", :name => "number_of_prescreens"}
+    .form_element
+        %input{:type => "submit"}
